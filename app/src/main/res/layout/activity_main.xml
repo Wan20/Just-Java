@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context="com.example.wansu.justjava.MainActivity">
 
     <TextView
+        android:id="@+id/tx"
+        style="?android:textAppearanceMedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="QUANTITY"
-        style="?android:textAppearanceMedium"
-        android:id="@+id/quantity_text_view"
-        android:textAllCaps="true"/>
+        android:textAllCaps="true" />
+
     <TextView
+        android:id="@+id/quantity_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:text="0"
-        android:textSize="16sp"
-        android:id="@+id/text"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"/>
+        android:textSize="16sp" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ORDER"/>
+        android:text="ORDER"
+        android:onClick="submitOrder"/>
 </LinearLayout>
