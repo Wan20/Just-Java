@@ -21,12 +21,10 @@
         android:text="0"
         android:textSize="16sp"
         android:id="@+id/text"
-        android:layout_below="@id/quantity_text_view"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ORDER"
-        android:layout_below="@id/text"/>
+        android:text="ORDER"/>
 </LinearLayout>
