@@ -11,7 +11,7 @@ import java.text.NumberFormat;
  * This app displays an order form to order coffee.
  */
 public class MainActivity extends AppCompatActivity {
-
+    int coffees = 2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submit(View view) {
-        int coffees = 2;
+
         display(coffees);
         displayPrice(coffees *5 + coffees*2);
     }
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the plus button is clicked.
      */
     public void submitin(View view) {
-        int coffees = 3;
+        coffees = coffees+1;
         display(coffees);
     }
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the minusr button is clicked.
      */
     public void submitde(View view) {
-        int coffees = 1;
+        coffees = coffees-1;
         display(coffees);
     }
     /**
