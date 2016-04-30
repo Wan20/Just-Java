@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public void submit(View view) {
 
         display(coffees);
-        displayPrice(coffees *5 + coffees*2);
+        displayPrice(coffees *5);
     }
 
     /**
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method is called when the minusr button is clicked.
+     * This method is called when the minus button is clicked.
      */
     public void submitde(View view) {
         coffees = coffees-1;
