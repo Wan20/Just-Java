@@ -23,10 +23,25 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submit(View view) {
         int coffees = 2;
-        display(coffees );
+        display(coffees);
         displayPrice(coffees *5 + coffees*2);
     }
 
+    /**
+     * This method is called when the plus button is clicked.
+     */
+    public void submitin(View view) {
+        int coffees = 3;
+        display(coffees);
+    }
+
+    /**
+     * This method is called when the minusr button is clicked.
+     */
+    public void submitde(View view) {
+        int coffees = 1;
+        display(coffees);
+    }
     /**
      * This method displays the given price on the screen.
      */
