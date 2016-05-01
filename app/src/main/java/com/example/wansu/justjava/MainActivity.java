@@ -22,15 +22,19 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submit(View view) {
-
-        display(coffees);
-        displayPrice(coffees *5);
+        int coffees = 10;
+        String message = "Amount due $" + coffees;
+        String message1 = "That would be $" + coffees + "please";
+        String message2 = "You owe " + coffees + " bucks, dude!";
+        String message3 = coffees + " dollars for 2 cups of coffee. Pay Up.";
+        String message4 = "Total = $" + coffees;
+        displayMessage(message3);
     }
 
     /**
      * This method is called when the plus button is clicked.
      */
-    public void submitin(View view) {
+    public void increment(View view) {
         coffees = coffees+1;
         display(coffees);
     }
@@ -38,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the minus button is clicked.
      */
-    public void submitde(View view) {
+    public void decrement(View view) {
         coffees = coffees-1;
         display(coffees);
     }
@@ -55,5 +59,13 @@ public class MainActivity extends AppCompatActivity {
     private void display(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
+    }
+
+    /**
+     * This method displays the given text on the screen.
+     */
+    private void displayMessage(String message) {
+        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        priceTextView.setText(message);
     }
 }
